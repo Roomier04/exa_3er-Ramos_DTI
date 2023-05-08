@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="733dp"
+        android:background="#CACFEA"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:id="@+id/tvTituloCR"
+            android:layout_width="363dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="APP Registro de Empleados"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#050000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNumeroCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Numero de empleado"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etNombreCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre de empleado"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etPuestoCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Puesto"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etDiasCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Días trabajados"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnAltaRC"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="altaEmpleado"
+            android:text="Alta empleado" />
+
+        <Button
+            android:id="@+id/btnConsulRC"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="consultaProducto"
+            android:text="Consulta empleado" />
+
+        <Button
+            android:id="@+id/btnBajaCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="eliminarProducto"
+            android:text="Baja empleado" />
+
+        <Button
+            android:id="@+id/btnEditarCR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="modificarProductos"
+            android:text="Editar empleado" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
